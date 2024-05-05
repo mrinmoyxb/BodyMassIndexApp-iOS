@@ -17,7 +17,7 @@ struct SelectGender: View {
             
             // Shape
             Rectangle()
-                .frame(width: 150, height: 150)
+                .frame(width: 180, height: 180)
                 .cornerRadius(20)
             VStack(alignment: .center){
                 
@@ -25,10 +25,14 @@ struct SelectGender: View {
                 Image(imageName)
                     .resizable()
                     .scaledToFit()
-                    .frame(maxWidth: 80, maxHeight: 80)
+                    .frame(maxWidth: 90, maxHeight: 90)
                 
                 // Text
-                Text(gender).foregroundColor(.white).font(.title3).bold()
+                Text(gender)
+                    .foregroundColor(.white)
+                    .font(.title3)
+                    .bold()
+                
             }.frame(maxWidth: .infinity, maxHeight: .infinity).padding(.horizontal)
             
         }.frame(maxWidth: 150, maxHeight: 150)

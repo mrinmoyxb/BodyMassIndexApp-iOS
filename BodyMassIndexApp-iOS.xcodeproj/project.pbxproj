@@ -13,6 +13,7 @@
 		F5EE12242BE7363C002260D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EE12232BE7363C002260D2 /* Preview Assets.xcassets */; };
 		F5EE12302BE73682002260D2 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE122F2BE73682002260D2 /* HomeScreen.swift */; };
 		F5EE12322BE73817002260D2 /* SelectGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE12312BE73817002260D2 /* SelectGender.swift */; };
+		F5EE12342BE75789002260D2 /* SelectAge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE12332BE75789002260D2 /* SelectAge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		F5EE12232BE7363C002260D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F5EE122F2BE73682002260D2 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		F5EE12312BE73817002260D2 /* SelectGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGender.swift; sourceTree = "<group>"; };
+		F5EE12332BE75789002260D2 /* SelectAge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				F5EE122F2BE73682002260D2 /* HomeScreen.swift */,
 				F5EE12312BE73817002260D2 /* SelectGender.swift */,
+				F5EE12332BE75789002260D2 /* SelectAge.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				F5EE121F2BE7363C002260D2 /* ContentView.swift in Sources */,
 				F5EE121D2BE7363C002260D2 /* BodyMassIndexApp_iOSApp.swift in Sources */,
 				F5EE12322BE73817002260D2 /* SelectGender.swift in Sources */,
+				F5EE12342BE75789002260D2 /* SelectAge.swift in Sources */,
 				F5EE12302BE73682002260D2 /* HomeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

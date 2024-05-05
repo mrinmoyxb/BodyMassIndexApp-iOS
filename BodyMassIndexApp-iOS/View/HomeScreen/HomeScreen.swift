@@ -10,13 +10,33 @@ import SwiftUI
 struct HomeScreen: View {
     var body: some View {
         NavigationStack{
-            VStack{
+            VStack(alignment: .center, spacing: 10){
+                
+                // Gender section
+                HStack{
+                    Text("Select Gender").font(.title3)
+                    Spacer()
+                }
                 HStack{
                     SelectGender(gender: "Male", imageName: "male")
+                    Spacer().frame(width: 40)
                     SelectGender(gender: "Female", imageName: "female")
-                }.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                }.frame(maxWidth: .infinity).padding()
+                
+                // Age Section
+                HStack{
+                    Text("Select Age").font(.title3)
+                    Spacer()
+                }
+                HStack{
+                    SelectAge()
+                    Spacer()
+                }
+                Spacer()
+                
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
-        }.navigationTitle("Body Mass Index")
+                .padding(.all)
+        }.navigationTitle("Body Mass Index").font(.headline)
     }
 }
 
