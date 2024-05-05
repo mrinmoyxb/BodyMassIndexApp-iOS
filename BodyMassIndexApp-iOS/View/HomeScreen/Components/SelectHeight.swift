@@ -8,8 +8,40 @@
 import SwiftUI
 
 struct SelectHeight: View {
+    
+    @State var heightOfUser: Int = 0
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            
+            // Frame
+            Rectangle()
+                .frame(maxWidth: .infinity)
+                .frame(height: 120)
+                .cornerRadius(20)
+            
+            // Weight
+            HStack{
+                ScrollView(.horizontal){
+                    LazyHStack{
+                        ForEach(30...200, id: \.self){height in
+                            Button(action: {heightOfUser = height},
+                                   label: {Text(String(height))
+                                    .font(.largeTitle)
+                                    .foregroundColor(.white)
+                                    .bold()
+                                .padding(4.5)}
+                            )
+                            
+                        }
+                    }
+                }
+                
+            }.padding()
+                .frame(maxWidth: .infinity)
+                .frame(height: 120)
+            
+        }
     }
 }
 

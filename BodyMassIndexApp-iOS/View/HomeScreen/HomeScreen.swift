@@ -35,6 +35,16 @@ struct HomeScreen: View {
                     Spacer()
                     SelectWeight()
                 }
+                
+                // Height Section
+                HStack{
+                    Text("Select Height")
+                        .font(.title3)
+                    Spacer()
+                }
+                HStack{
+                    SelectHeight()
+                }
                 Spacer()
                 
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
