@@ -40,6 +40,3 @@ struct SelectGender: View {
     }
 }
 
-#Preview {
-    SelectGender(gender: "Female", imageName: "female")
-}

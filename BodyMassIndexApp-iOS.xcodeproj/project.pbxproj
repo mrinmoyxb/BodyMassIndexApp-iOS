@@ -14,6 +14,7 @@
 		F5EE12302BE73682002260D2 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE122F2BE73682002260D2 /* HomeScreen.swift */; };
 		F5EE12322BE73817002260D2 /* SelectGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE12312BE73817002260D2 /* SelectGender.swift */; };
 		F5EE12342BE75789002260D2 /* SelectAge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE12332BE75789002260D2 /* SelectAge.swift */; };
+		F5EE12372BE7629A002260D2 /* SelectWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE12362BE7629A002260D2 /* SelectWeight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		F5EE122F2BE73682002260D2 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		F5EE12312BE73817002260D2 /* SelectGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGender.swift; sourceTree = "<group>"; };
 		F5EE12332BE75789002260D2 /* SelectAge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAge.swift; sourceTree = "<group>"; };
+		F5EE12362BE7629A002260D2 /* SelectWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWeight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +104,8 @@
 		F5EE122D2BE73663002260D2 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				F5EE12352BE7602B002260D2 /* Components */,
 				F5EE122F2BE73682002260D2 /* HomeScreen.swift */,
-				F5EE12312BE73817002260D2 /* SelectGender.swift */,
-				F5EE12332BE75789002260D2 /* SelectAge.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -114,6 +115,16 @@
 			children = (
 			);
 			path = ResultScreen;
+			sourceTree = "<group>";
+		};
+		F5EE12352BE7602B002260D2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F5EE12332BE75789002260D2 /* SelectAge.swift */,
+				F5EE12312BE73817002260D2 /* SelectGender.swift */,
+				F5EE12362BE7629A002260D2 /* SelectWeight.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 				F5EE121F2BE7363C002260D2 /* ContentView.swift in Sources */,
 				F5EE121D2BE7363C002260D2 /* BodyMassIndexApp_iOSApp.swift in Sources */,
 				F5EE12322BE73817002260D2 /* SelectGender.swift in Sources */,
+				F5EE12372BE7629A002260D2 /* SelectWeight.swift in Sources */,
 				F5EE12342BE75789002260D2 /* SelectAge.swift in Sources */,
 				F5EE12302BE73682002260D2 /* HomeScreen.swift in Sources */,
 			);

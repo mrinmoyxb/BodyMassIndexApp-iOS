@@ -26,11 +26,14 @@ struct HomeScreen: View {
                 // Age Section
                 HStack{
                     Text("Select Age").font(.title3)
+                    Spacer().frame(width: 100)
+                    Text("Select Weight").font(.title3)
                     Spacer()
                 }
                 HStack{
                     SelectAge()
                     Spacer()
+                    SelectWeight()
                 }
                 Spacer()
                 

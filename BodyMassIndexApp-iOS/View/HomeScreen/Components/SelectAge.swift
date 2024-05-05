@@ -56,7 +56,3 @@ struct SelectAge: View {
         }
     }
 }
-
-#Preview {
-    SelectAge()
-}
