@@ -11,7 +11,7 @@ import SwiftUI
 
 struct SelectWeight: View {
     
-    @State var ages: [Int] = Array(10...150)
+    @State var ages: Int = 0
     
     var body: some View {
         ZStack{
@@ -25,18 +25,21 @@ struct SelectWeight: View {
             HStack{
                 ScrollView(.horizontal){
                     LazyHStack{
-                        ForEach(ages, id: \.self){age in
-                            Text(String(age))
-                                .font(.largeTitle)
-                                .bold()
-                                .foregroundColor(.white)
-                                .padding([.all], 5)
+                        ForEach(10...150, id: \.self){age in
+                            Button(action: {ages = age}, 
+                                   label: {Text(String(age))
+                                    .font(.largeTitle)
+                                    .foregroundColor(.white)
+                                    .bold()
+                                .padding(4.5)}
+                            )
                             
                         }
                     }
                 }
                 
             }.padding().frame(width: 180, height: 120)
+            
         }
     }
 }
