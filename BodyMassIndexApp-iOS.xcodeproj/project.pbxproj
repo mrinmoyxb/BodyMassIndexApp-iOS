@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F55EE8222BE7BD6D002825DC /* SelectHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55EE8212BE7BD6D002825DC /* SelectHeight.swift */; };
+		F55EE8252BE7C206002825DC /* ResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55EE8242BE7C206002825DC /* ResultScreen.swift */; };
 		F5EE121D2BE7363C002260D2 /* BodyMassIndexApp_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE121C2BE7363C002260D2 /* BodyMassIndexApp_iOSApp.swift */; };
 		F5EE121F2BE7363C002260D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE121E2BE7363C002260D2 /* ContentView.swift */; };
 		F5EE12212BE7363C002260D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EE12202BE7363C002260D2 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		F55EE8212BE7BD6D002825DC /* SelectHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectHeight.swift; sourceTree = "<group>"; };
+		F55EE8242BE7C206002825DC /* ResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreen.swift; sourceTree = "<group>"; };
 		F5EE12192BE7363C002260D2 /* BodyMassIndexApp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BodyMassIndexApp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EE121C2BE7363C002260D2 /* BodyMassIndexApp_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMassIndexApp_iOSApp.swift; sourceTree = "<group>"; };
 		F5EE121E2BE7363C002260D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +44,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F55EE8232BE7C1F4002825DC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		F5EE12102BE7363C002260D2 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +124,8 @@
 		F5EE122E2BE7366E002260D2 /* ResultScreen */ = {
 			isa = PBXGroup;
 			children = (
+				F55EE8232BE7C1F4002825DC /* Components */,
+				F55EE8242BE7C206002825DC /* ResultScreen.swift */,
 			);
 			path = ResultScreen;
 			sourceTree = "<group>";
@@ -204,6 +215,7 @@
 				F5EE121D2BE7363C002260D2 /* BodyMassIndexApp_iOSApp.swift in Sources */,
 				F5EE12322BE73817002260D2 /* SelectGender.swift in Sources */,
 				F5EE12372BE7629A002260D2 /* SelectWeight.swift in Sources */,
+				F55EE8252BE7C206002825DC /* ResultScreen.swift in Sources */,
 				F5EE12342BE75789002260D2 /* SelectAge.swift in Sources */,
 				F5EE12302BE73682002260D2 /* HomeScreen.swift in Sources */,
 				F55EE8222BE7BD6D002825DC /* SelectHeight.swift in Sources */,

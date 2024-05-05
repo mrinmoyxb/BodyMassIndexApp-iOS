@@ -27,7 +27,7 @@ struct HomeScreen: View {
                 HStack{
                     Text("Select Age").font(.title3)
                     Spacer().frame(width: 100)
-                    Text("Select Weight").font(.title3)
+                    Text("Select Weight(kg)").font(.title3)
                     Spacer()
                 }
                 HStack{
@@ -38,17 +38,32 @@ struct HomeScreen: View {
                 
                 // Height Section
                 HStack{
-                    Text("Select Height")
+                    Text("Select Height(cm)")
                         .font(.title3)
                     Spacer()
                 }
                 HStack{
                     SelectHeight()
                 }
+                
+                // Calculate BMI
+                Spacer()
+                NavigationLink(destination: ResultScreen(),
+                               label: {Text("Calculate BMI")
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 70)
+                        .font(.largeTitle)
+                        .bold()
+                        .foregroundColor(.white)
+                        .background(.black)
+                    .cornerRadius(20)}
+                )
                 Spacer()
                 
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
                 .padding(.all)
+            
+            
         }.navigationTitle("Body Mass Index").font(.headline)
     }
 }
