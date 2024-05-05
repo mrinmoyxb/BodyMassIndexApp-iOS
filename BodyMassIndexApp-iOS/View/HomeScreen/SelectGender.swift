@@ -8,11 +8,34 @@
 import SwiftUI
 
 struct SelectGender: View {
+    
+    var gender: String = ""
+    var imageName: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack(alignment: .bottom){
+            
+            // Shape
+            Rectangle()
+                .frame(width: 150, height: 150)
+                .cornerRadius(20)
+            VStack(alignment: .center){
+                
+                // Image
+                Image(imageName)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(maxWidth: 80, maxHeight: 80)
+                
+                // Text
+                Text(gender).foregroundColor(.white).font(.title3).bold()
+            }.frame(maxWidth: .infinity, maxHeight: .infinity).padding(.horizontal)
+            
+        }.frame(maxWidth: 150, maxHeight: 150)
+        
     }
 }
 
 #Preview {
-    SelectGender()
+    SelectGender(gender: "Female", imageName: "female")
 }
