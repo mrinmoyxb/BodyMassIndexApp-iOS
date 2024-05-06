@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+class testModel: ObservableObject{
+    @Published var age: Int = -1
+    @Published var result: Int = 0
+    
+    func demotest(){
+        result = age*100
+    }
+}

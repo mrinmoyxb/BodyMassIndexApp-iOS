@@ -10,6 +10,7 @@ import SwiftUI
 struct SelectAge: View {
     
     @State var age: Int = 20
+    @EnvironmentObject var bmiObject: BodyMassIndexViewModel
     
     var body: some View {
         ZStack{
@@ -27,6 +28,7 @@ struct SelectAge: View {
                         return
                     }
                     age -= 1
+                    bmiObject.age = age
                 }label:{
                     Circle()
                         .frame(width: 40, height: 40)
@@ -45,6 +47,7 @@ struct SelectAge: View {
                 // Button: +
                 Button{
                     age += 1
+                    bmiObject.age = age
                 }label:{
                     Circle()
                         .frame(width: 40, height: 40)

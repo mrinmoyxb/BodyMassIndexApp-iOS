@@ -10,6 +10,7 @@ import SwiftUI
 struct SelectHeight: View {
     
     @State var heightOfUser: Int = 0
+    @EnvironmentObject var bmiObject: BodyMassIndexViewModel
     
     var body: some View {
         ZStack{
@@ -25,7 +26,8 @@ struct SelectHeight: View {
                 ScrollView(.horizontal){
                     LazyHStack{
                         ForEach(30...200, id: \.self){height in
-                            Button(action: {heightOfUser = height},
+                            Button(action: {heightOfUser = height
+                                bmiObject.height = heightOfUser},
                                    label: {Text(String(height))
                                     .font(.largeTitle)
                                     .foregroundColor(.white)

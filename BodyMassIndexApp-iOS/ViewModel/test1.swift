@@ -8,8 +8,46 @@
 import SwiftUI
 
 struct test1: View {
+    
+    @ObservedObject var a: testModel = testModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+        VStack{
+            Text("Demo")
+            test2()
+            Text(String(a.result))
+            NavigationLink(destination: test3(), label: {Text("Click")})
+        }
+        }.environmentObject(a)
+    }
+}
+
+struct test2: View {
+    @State var age: Int = 0
+    @EnvironmentObject var a: testModel
+    
+    var body: some View {
+        VStack{
+            Text(String(age)).font(.title).bold()
+            Button(action: {age += 1
+                a.age = age
+                a.demotest()
+            }, label: {
+                Text("Button")
+            })
+        }
+    }
+}
+
+struct test3: View {
+    
+    @EnvironmentObject var a: testModel
+    
+    var body: some View {
+        VStack{
+            Text("Result: \(a.result)")
+        }
     }
 }
 

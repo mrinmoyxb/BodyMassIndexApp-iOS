@@ -11,32 +11,46 @@ struct SelectGender: View {
     
     var gender: String = ""
     var imageName: String = ""
+    @EnvironmentObject var bmiObject: BodyMassIndexViewModel
     
     var body: some View {
-        ZStack(alignment: .bottom){
+        VStack{
+            Button{
+                if(gender=="Male"){
+                    bmiObject.sex = 1
+                }
+                if(gender=="Female"){
+                    bmiObject.sex = 0
+                }
+            }
+        label: {
+            ZStack(alignment: .bottom){
+                
+                // Shape
+                Rectangle()
+                    .frame(width: 180, height: 180)
+                    .cornerRadius(20)
+                    .foregroundColor(.black)
+                VStack(alignment: .center){
+                    
+                    // Image
+                    Image(imageName)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(maxWidth: 90, maxHeight: 90)
+                    
+                    // Text
+                    Text(gender)
+                        .foregroundColor(.white)
+                        .font(.title3)
+                        .bold()
+                    
+                }.frame(maxWidth: .infinity, maxHeight: .infinity).padding(.horizontal)
+                
+            }.frame(maxWidth: 150, maxHeight: 150)
+        }
             
-            // Shape
-            Rectangle()
-                .frame(width: 180, height: 180)
-                .cornerRadius(20)
-            VStack(alignment: .center){
-                
-                // Image
-                Image(imageName)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(maxWidth: 90, maxHeight: 90)
-                
-                // Text
-                Text(gender)
-                    .foregroundColor(.white)
-                    .font(.title3)
-                    .bold()
-                
-            }.frame(maxWidth: .infinity, maxHeight: .infinity).padding(.horizontal)
-            
-        }.frame(maxWidth: 150, maxHeight: 150)
-        
+        }
     }
 }
 

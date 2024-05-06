@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeScreen: View {
+    
+    @ObservedObject var bmiObject: BodyMassIndexViewModel = BodyMassIndexViewModel()
+    
     var body: some View {
         NavigationStack{
             VStack(alignment: .center, spacing: 10){
@@ -57,19 +60,23 @@ struct HomeScreen: View {
                         .foregroundColor(.white)
                         .background(.black)
                     .cornerRadius(20)}
-                )
+                ).onTapGesture {
+                    bmiObject.calculateBodyMassIndex()
+                }
                 Spacer()
                 
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
                 .padding(.all)
             
             
-        }.navigationTitle("Body Mass Index").font(.headline)
+        }.navigationTitle("Body Mass Index")
+            .font(.headline)
+            .environmentObject(bmiObject)
     }
 }
 
 #Preview {
     NavigationStack{
         HomeScreen()
-    }
+    }.environmentObject(BodyMassIndexViewModel())
 }

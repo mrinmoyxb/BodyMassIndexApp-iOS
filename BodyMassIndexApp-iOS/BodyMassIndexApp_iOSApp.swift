@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct BodyMassIndexApp_iOSApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                HomeScreen()
+            }
         }
     }
 }
