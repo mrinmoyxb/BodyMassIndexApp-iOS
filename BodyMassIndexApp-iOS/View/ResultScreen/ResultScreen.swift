@@ -15,13 +15,13 @@ struct ResultScreen: View {
         VStack{
             Text("Hello")
             Text(String(e.age))
-            Text(String(e.weight))
-            Text(String(e.height))
-            Text(String(e.result))
+//            Text(String(e.weight))
+//            Text(String(e.height))
+            Text(String(e.testR))
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
-#Preview {
-    ResultScreen()
-}
+//#Preview {
+//    ResultScreen()
+//}

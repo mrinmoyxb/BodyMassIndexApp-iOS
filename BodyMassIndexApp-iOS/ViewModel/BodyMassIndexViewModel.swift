@@ -18,10 +18,15 @@ class BodyMassIndexViewModel: ObservableObject{
     @Published var height: Int = -1
     
     // result
-    @Published var result: Int = 0
+    @Published var result: Double = 0.0
+    @Published var testR: Int = 0
     
     // function to calculate BMI
     func calculateBodyMassIndex(){
-        result = weight/(height*height)
+        result = Double(weight)/(Double(height)*Double(height))
+    }
+    
+    func test(){
+        testR = age*100
     }
 }

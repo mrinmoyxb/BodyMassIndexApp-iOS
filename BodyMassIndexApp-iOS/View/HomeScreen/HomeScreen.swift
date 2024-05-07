@@ -9,10 +9,9 @@ import SwiftUI
 
 struct HomeScreen: View {
     
-    @ObservedObject var bmiObject: BodyMassIndexViewModel = BodyMassIndexViewModel()
+    @EnvironmentObject var bmiObject: BodyMassIndexViewModel
     
     var body: some View {
-        NavigationStack{
             VStack(alignment: .center, spacing: 10){
                 
                 // Gender section
@@ -51,27 +50,27 @@ struct HomeScreen: View {
                 
                 // Calculate BMI
                 Spacer()
-                NavigationLink(destination: ResultScreen(),
-                               label: {Text("Calculate BMI")
+                NavigationLink(destination: ResultScreen().onAppear{bmiObject.test()},
+                               label: {
+                    Text("Calculate BMI")
                         .frame(maxWidth: .infinity)
                         .frame(height: 70)
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.white)
                         .background(.black)
-                    .cornerRadius(20)}
-                ).onTapGesture {
-                    bmiObject.calculateBodyMassIndex()
-                }
-                Spacer()
+                        .cornerRadius(20)
+                    }
+                ).onTapGesture(perform: {
+                    //bmiObject.calculateBodyMassIndex()
+                    bmiObject.test()
+                })
                 
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
                 .padding(.all)
+                .navigationTitle("Body Mass Index")
+                    .font(.headline)
             
-            
-        }.navigationTitle("Body Mass Index")
-            .font(.headline)
-            .environmentObject(bmiObject)
     }
 }
 

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F53AAE012BE7FA40005AE772 /* test1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AAE002BE7FA40005AE772 /* test1.swift */; };
-		F53AAE042BE7FAE7005AE772 /* testModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AAE032BE7FAE7005AE772 /* testModel.swift */; };
 		F55EE8222BE7BD6D002825DC /* SelectHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55EE8212BE7BD6D002825DC /* SelectHeight.swift */; };
 		F55EE8252BE7C206002825DC /* ResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55EE8242BE7C206002825DC /* ResultScreen.swift */; };
 		F55EE8272BE7CBB2002825DC /* BodyMassIndexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55EE8262BE7CBB2002825DC /* BodyMassIndexViewModel.swift */; };
@@ -19,11 +17,11 @@
 		F5EE12322BE73817002260D2 /* SelectGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE12312BE73817002260D2 /* SelectGender.swift */; };
 		F5EE12342BE75789002260D2 /* SelectAge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE12332BE75789002260D2 /* SelectAge.swift */; };
 		F5EE12372BE7629A002260D2 /* SelectWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE12362BE7629A002260D2 /* SelectWeight.swift */; };
+		F5FC34712BE914720005ECF9 /* testModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC34702BE914720005ECF9 /* testModel.swift */; };
+		F5FC34732BE914A60005ECF9 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC34722BE914A60005ECF9 /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F53AAE002BE7FA40005AE772 /* test1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test1.swift; sourceTree = "<group>"; };
-		F53AAE032BE7FAE7005AE772 /* testModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testModel.swift; sourceTree = "<group>"; };
 		F55EE8212BE7BD6D002825DC /* SelectHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectHeight.swift; sourceTree = "<group>"; };
 		F55EE8242BE7C206002825DC /* ResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreen.swift; sourceTree = "<group>"; };
 		F55EE8262BE7CBB2002825DC /* BodyMassIndexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMassIndexViewModel.swift; sourceTree = "<group>"; };
@@ -35,6 +33,8 @@
 		F5EE12312BE73817002260D2 /* SelectGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGender.swift; sourceTree = "<group>"; };
 		F5EE12332BE75789002260D2 /* SelectAge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAge.swift; sourceTree = "<group>"; };
 		F5EE12362BE7629A002260D2 /* SelectWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWeight.swift; sourceTree = "<group>"; };
+		F5FC34702BE914720005ECF9 /* testModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testModel.swift; sourceTree = "<group>"; };
+		F5FC34722BE914A60005ECF9 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				F55EE8262BE7CBB2002825DC /* BodyMassIndexViewModel.swift */,
-				F53AAE002BE7FA40005AE772 /* test1.swift */,
-				F53AAE032BE7FAE7005AE772 /* testModel.swift */,
+				F5FC34702BE914720005ECF9 /* testModel.swift */,
+				F5FC34722BE914A60005ECF9 /* test.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -220,11 +220,11 @@
 				F55EE8272BE7CBB2002825DC /* BodyMassIndexViewModel.swift in Sources */,
 				F5EE121D2BE7363C002260D2 /* BodyMassIndexApp_iOSApp.swift in Sources */,
 				F5EE12322BE73817002260D2 /* SelectGender.swift in Sources */,
+				F5FC34732BE914A60005ECF9 /* test.swift in Sources */,
 				F5EE12372BE7629A002260D2 /* SelectWeight.swift in Sources */,
 				F55EE8252BE7C206002825DC /* ResultScreen.swift in Sources */,
-				F53AAE042BE7FAE7005AE772 /* testModel.swift in Sources */,
 				F5EE12342BE75789002260D2 /* SelectAge.swift in Sources */,
-				F53AAE012BE7FA40005AE772 /* test1.swift in Sources */,
+				F5FC34712BE914720005ECF9 /* testModel.swift in Sources */,
 				F5EE12302BE73682002260D2 /* HomeScreen.swift in Sources */,
 				F55EE8222BE7BD6D002825DC /* SelectHeight.swift in Sources */,
 			);

@@ -10,11 +10,13 @@ import SwiftUI
 @main
 struct BodyMassIndexApp_iOSApp: App {
     
+    @ObservedObject var bmiObject: BodyMassIndexViewModel = BodyMassIndexViewModel()
+    
     var body: some Scene {
         WindowGroup {
             NavigationStack{
                 HomeScreen()
-            }
+            }.environmentObject(bmiObject)
         }
     }
 }
