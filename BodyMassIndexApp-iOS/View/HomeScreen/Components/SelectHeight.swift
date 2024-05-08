@@ -20,6 +20,7 @@ struct SelectHeight: View {
                 .frame(maxWidth: .infinity)
                 .frame(height: 120)
                 .cornerRadius(20)
+                .shadow(color: .gray, radius: 5)
             
             // Weight
             HStack{
@@ -47,6 +48,3 @@ struct SelectHeight: View {
     }
 }
 
-#Preview {
-    SelectHeight()
-}

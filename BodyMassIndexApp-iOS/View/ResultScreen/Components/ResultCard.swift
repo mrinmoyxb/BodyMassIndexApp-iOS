@@ -17,6 +17,7 @@ struct ResultCard: View {
                 .frame(width: 250, height: 250)
                 .foregroundColor(.black)
                 .cornerRadius(20)
+                .shadow(color: .gray, radius: 5)
             VStack{
                 Spacer()
                 

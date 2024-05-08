@@ -11,6 +11,8 @@ struct SelectGender: View {
     
     var gender: String = ""
     var imageName: String = ""
+    //var buttonState: Bool = false
+    
     @EnvironmentObject var bmiObject: BodyMassIndexViewModel
     
     var body: some View {
@@ -31,6 +33,7 @@ struct SelectGender: View {
                     .frame(width: 180, height: 180)
                     .cornerRadius(20)
                     .foregroundColor(.black)
+                    .shadow(color: .gray, radius: 5)
                 VStack(alignment: .center){
                     
                     // Image

@@ -19,6 +19,7 @@ struct SelectWeight: View {
             Rectangle()
                 .frame(width: 180, height: 120)
                 .cornerRadius(20)
+                .shadow(color: .gray, radius: 5)
             
             // Weight
             HStack{

@@ -61,7 +61,7 @@ struct HomeScreen: View {
                         .background(.black)
                         .cornerRadius(20)
                     }
-                )
+                ).shadow(color: .gray, radius: 5)
                 
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
                 .padding(.all)

@@ -18,6 +18,7 @@ struct HealthAnalysis: View {
                 .frame(height: 350)
                 .foregroundColor(.black)
                 .cornerRadius(20)
+                .shadow(color: .gray, radius: 5)
             
             VStack(alignment: .center, spacing: 20){
                 Text("Health Risk")
