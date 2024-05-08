@@ -8,11 +8,36 @@
 import SwiftUI
 
 struct ResultCard: View {
+    
+    @EnvironmentObject var bmiObject: BodyMassIndexViewModel
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            // Shape
+            Rectangle()
+                .frame(width: 250, height: 250)
+                .foregroundColor(.black)
+                .cornerRadius(20)
+            VStack{
+                Spacer()
+                
+                // Result
+                Text(String(bmiObject.testR))
+                    .foregroundColor(.white)
+                    .font(.system(size: 70))
+                    .bold()
+                    .padding()
+                
+               
+                Text("kg/m2")
+                    .foregroundColor(.white)
+                    .font(.system(size: 25))
+                    .padding()
+                Spacer()
+                
+            }.frame(width: 250, height: 250)
+                
+            
+        }
     }
 }
 
-#Preview {
-    ResultCard()
-}

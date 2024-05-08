@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F52853E92BEB2EFA00F360C9 /* ResultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52853E82BEB2EFA00F360C9 /* ResultCard.swift */; };
 		F55EE8222BE7BD6D002825DC /* SelectHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55EE8212BE7BD6D002825DC /* SelectHeight.swift */; };
 		F55EE8252BE7C206002825DC /* ResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55EE8242BE7C206002825DC /* ResultScreen.swift */; };
 		F55EE8272BE7CBB2002825DC /* BodyMassIndexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55EE8262BE7CBB2002825DC /* BodyMassIndexViewModel.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F52853E82BEB2EFA00F360C9 /* ResultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCard.swift; sourceTree = "<group>"; };
 		F55EE8212BE7BD6D002825DC /* SelectHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectHeight.swift; sourceTree = "<group>"; };
 		F55EE8242BE7C206002825DC /* ResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreen.swift; sourceTree = "<group>"; };
 		F55EE8262BE7CBB2002825DC /* BodyMassIndexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMassIndexViewModel.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 		F55EE8232BE7C1F4002825DC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F52853E82BEB2EFA00F360C9 /* ResultCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				F5EE12372BE7629A002260D2 /* SelectWeight.swift in Sources */,
 				F55EE8252BE7C206002825DC /* ResultScreen.swift in Sources */,
 				F5EE12342BE75789002260D2 /* SelectAge.swift in Sources */,
+				F52853E92BEB2EFA00F360C9 /* ResultCard.swift in Sources */,
 				F5FC34712BE914720005ECF9 /* testModel.swift in Sources */,
 				F5EE12302BE73682002260D2 /* HomeScreen.swift in Sources */,
 				F55EE8222BE7BD6D002825DC /* SelectHeight.swift in Sources */,
