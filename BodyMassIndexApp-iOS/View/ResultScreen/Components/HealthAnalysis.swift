@@ -9,7 +9,39 @@ import SwiftUI
 
 struct HealthAnalysis: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Rectangle()
+                .frame(maxWidth: .infinity)
+                .frame(height: 350)
+                .foregroundColor(.black)
+                .cornerRadius(20)
+                .padding()
+            
+            VStack(alignment: .center, spacing: 20){
+                Text("Health Risk")
+                    .foregroundColor(.white)
+                    .bold()
+                    .font(.title)
+                
+                Text("zzz")
+                    .foregroundColor(.white)
+                    .font(.title3)
+                    .padding()
+                
+                Text("Impact on health")
+                    .foregroundColor(.white)
+                    .bold()
+                    .font(.title)
+                    .padding()
+                
+                Text("zzz")
+                    .foregroundColor(.white)
+                    .font(.title3)
+                    .padding()
+                
+            }
+            
+        }
     }
 }
 

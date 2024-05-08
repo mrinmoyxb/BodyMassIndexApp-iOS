@@ -12,9 +12,13 @@ struct ResultScreen: View {
     //@EnvironmentObject var e: BodyMassIndexViewModel
     
     var body: some View {
-        VStack{
+        VStack(alignment: .center, spacing: 20){
+            Spacer()
             ResultCard()
+            
+            Spacer()
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
+            .padding(.all)
     }
 }
 

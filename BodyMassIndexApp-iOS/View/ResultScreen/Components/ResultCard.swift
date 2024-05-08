@@ -21,7 +21,7 @@ struct ResultCard: View {
                 Spacer()
                 
                 // Result
-                Text(String(bmiObject.testR))
+                Text(String(bmiObject.result))
                     .foregroundColor(.white)
                     .font(.system(size: 70))
                     .bold()
