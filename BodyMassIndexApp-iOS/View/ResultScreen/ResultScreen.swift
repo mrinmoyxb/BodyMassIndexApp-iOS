@@ -16,6 +16,8 @@ struct ResultScreen: View {
             Spacer()
             ResultCard()
             
+            HealthAnalysis()
+            
             Spacer()
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
             .padding(.all)

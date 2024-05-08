@@ -50,7 +50,7 @@ struct HomeScreen: View {
                 
                 // Calculate BMI
                 Spacer()
-                NavigationLink(destination: ResultScreen().onAppear{bmiObject.test()},
+                NavigationLink(destination: ResultScreen().onAppear{bmiObject.calculateBodyMassIndex()},
                                label: {
                     Text("Calculate BMI")
                         .frame(maxWidth: .infinity)
@@ -61,10 +61,7 @@ struct HomeScreen: View {
                         .background(.black)
                         .cornerRadius(20)
                     }
-                ).onTapGesture(perform: {
-                    //bmiObject.calculateBodyMassIndex()
-                    bmiObject.test()
-                })
+                )
                 
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
                 .padding(.all)

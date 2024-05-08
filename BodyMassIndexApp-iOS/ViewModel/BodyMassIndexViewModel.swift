@@ -19,8 +19,8 @@ class BodyMassIndexViewModel: ObservableObject{
     
     // result
     @Published var result: Double = 0.0
-    @Published var resultRisk: String = ""
-    @Published var resultImpact: String = ""
+    @Published var resultRisk: String = "..."
+    @Published var resultImpact: String = "..."
     //@Published var testR: Int = 0
     
     // Possible health impacts
@@ -40,11 +40,14 @@ class BodyMassIndexViewModel: ObservableObject{
     func calculateBodyMassIndex(){
         let newHeight = Double(height)/100.0
         result = Double(weight)/(newHeight*newHeight)
+        
+        calculateResultRisk()
+        calculateResultImpact()
     }
     
     // function to calculate risk:
     func calculateResultRisk(){
-        switch result{
+        switch(result){
         case 0.0...18.5:
             resultRisk = underweightRisk
             
