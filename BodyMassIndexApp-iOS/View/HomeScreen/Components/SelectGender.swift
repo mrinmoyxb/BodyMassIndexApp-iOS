@@ -11,7 +11,7 @@ struct SelectGender: View {
     
     var gender: String = ""
     var imageName: String = ""
-    //var buttonState: Bool = false
+    var buttonState: Bool = false
     
     @EnvironmentObject var bmiObject: BodyMassIndexViewModel
     

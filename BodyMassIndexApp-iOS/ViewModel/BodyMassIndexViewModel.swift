@@ -18,7 +18,7 @@ class BodyMassIndexViewModel: ObservableObject{
     @Published var height: Int = -1
     
     // result
-    @Published var result: Double = 0.0
+    @Published var result: Double = 0.0 
     @Published var resultRisk: String = "..."
     @Published var resultImpact: String = "..."
     //@Published var testR: Int = 0

@@ -20,9 +20,9 @@ struct HomeScreen: View {
                     Spacer()
                 }
                 HStack{
-                    SelectGender(gender: "Male", imageName: "male")
+                    SelectGender(gender: "Male", imageName: "male", buttonState: true)
                     Spacer().frame(width: 40)
-                    SelectGender(gender: "Female", imageName: "female")
+                    SelectGender(gender: "Female", imageName: "female", buttonState: false)
                 }.frame(maxWidth: .infinity).padding()
                 
                 // Age Section

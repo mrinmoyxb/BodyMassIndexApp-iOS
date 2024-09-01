@@ -11,6 +11,7 @@ struct test1: View {
     
     @ObservedObject var a: testModel = testModel()
     @State private var shouldNavigateToMainScreen = false
+    var buttonState: Bool = false
     
     var body: some View {
         NavigationStack{
@@ -21,6 +22,20 @@ struct test1: View {
                 NavigationLink(destination: test3().onAppear{a.demotest()}){
                     Text("Next Screen")
                 }
+                    
+                    ZStack{
+                        Rectangle()
+                            .background(.black)
+                            .frame(width: 200, height: 200)
+                        Image("Male")
+                            .resizable()
+                            .scaledToFit()
+                            .foregroundColor(.white)
+                            .frame(maxWidth: 90, maxHeight: 90)
+                            
+                        
+                    }
+                
                 
                 
             }

@@ -12,6 +12,7 @@
 		F55EE8222BE7BD6D002825DC /* SelectHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55EE8212BE7BD6D002825DC /* SelectHeight.swift */; };
 		F55EE8252BE7C206002825DC /* ResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55EE8242BE7C206002825DC /* ResultScreen.swift */; };
 		F55EE8272BE7CBB2002825DC /* BodyMassIndexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55EE8262BE7CBB2002825DC /* BodyMassIndexViewModel.swift */; };
+		F5D8CB4B2C84E2CE00F99244 /* asyncAwait.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D8CB4A2C84E2CE00F99244 /* asyncAwait.swift */; };
 		F5EE121D2BE7363C002260D2 /* BodyMassIndexApp_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE121C2BE7363C002260D2 /* BodyMassIndexApp_iOSApp.swift */; };
 		F5EE12212BE7363C002260D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EE12202BE7363C002260D2 /* Assets.xcassets */; };
 		F5EE12242BE7363C002260D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EE12232BE7363C002260D2 /* Preview Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		F55EE8212BE7BD6D002825DC /* SelectHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectHeight.swift; sourceTree = "<group>"; };
 		F55EE8242BE7C206002825DC /* ResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreen.swift; sourceTree = "<group>"; };
 		F55EE8262BE7CBB2002825DC /* BodyMassIndexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMassIndexViewModel.swift; sourceTree = "<group>"; };
+		F5D8CB4A2C84E2CE00F99244 /* asyncAwait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = asyncAwait.swift; sourceTree = "<group>"; };
 		F5EE12192BE7363C002260D2 /* BodyMassIndexApp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BodyMassIndexApp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EE121C2BE7363C002260D2 /* BodyMassIndexApp_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMassIndexApp_iOSApp.swift; sourceTree = "<group>"; };
 		F5EE12202BE7363C002260D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		F5D8CB492C84E2BB00F99244 /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				F5D8CB4A2C84E2CE00F99244 /* asyncAwait.swift */,
+			);
+			path = Concurrency;
+			sourceTree = "<group>";
+		};
 		F5EE12102BE7363C002260D2 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +90,7 @@
 		F5EE121B2BE7363C002260D2 /* BodyMassIndexApp-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				F5D8CB492C84E2BB00F99244 /* Concurrency */,
 				F5EE122C2BE73654002260D2 /* ViewModel */,
 				F5EE122B2BE7364F002260D2 /* View */,
 				F5EE122A2BE73644002260D2 /* Model */,
@@ -225,6 +236,7 @@
 			files = (
 				F55EE8272BE7CBB2002825DC /* BodyMassIndexViewModel.swift in Sources */,
 				F5EE121D2BE7363C002260D2 /* BodyMassIndexApp_iOSApp.swift in Sources */,
+				F5D8CB4B2C84E2CE00F99244 /* asyncAwait.swift in Sources */,
 				F5EE12322BE73817002260D2 /* SelectGender.swift in Sources */,
 				F5FC34732BE914A60005ECF9 /* test.swift in Sources */,
 				F5EE12372BE7629A002260D2 /* SelectWeight.swift in Sources */,
