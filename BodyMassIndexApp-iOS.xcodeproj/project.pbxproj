@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F52853E92BEB2EFA00F360C9 /* ResultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52853E82BEB2EFA00F360C9 /* ResultCard.swift */; };
 		F52853EB2BEB33E500F360C9 /* HealthAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52853EA2BEB33E500F360C9 /* HealthAnalysis.swift */; };
+		F53A0D3E2C85F39C008859C4 /* asyncAwait1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53A0D3D2C85F39C008859C4 /* asyncAwait1.swift */; };
 		F55EE8222BE7BD6D002825DC /* SelectHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55EE8212BE7BD6D002825DC /* SelectHeight.swift */; };
 		F55EE8252BE7C206002825DC /* ResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55EE8242BE7C206002825DC /* ResultScreen.swift */; };
 		F55EE8272BE7CBB2002825DC /* BodyMassIndexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55EE8262BE7CBB2002825DC /* BodyMassIndexViewModel.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		F52853E82BEB2EFA00F360C9 /* ResultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCard.swift; sourceTree = "<group>"; };
 		F52853EA2BEB33E500F360C9 /* HealthAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthAnalysis.swift; sourceTree = "<group>"; };
+		F53A0D3D2C85F39C008859C4 /* asyncAwait1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = asyncAwait1.swift; sourceTree = "<group>"; };
 		F55EE8212BE7BD6D002825DC /* SelectHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectHeight.swift; sourceTree = "<group>"; };
 		F55EE8242BE7C206002825DC /* ResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreen.swift; sourceTree = "<group>"; };
 		F55EE8262BE7CBB2002825DC /* BodyMassIndexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMassIndexViewModel.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				F5D8CB4A2C84E2CE00F99244 /* asyncAwait.swift */,
+				F53A0D3D2C85F39C008859C4 /* asyncAwait1.swift */,
 			);
 			path = Concurrency;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				F52853E92BEB2EFA00F360C9 /* ResultCard.swift in Sources */,
 				F5FC34712BE914720005ECF9 /* testModel.swift in Sources */,
 				F52853EB2BEB33E500F360C9 /* HealthAnalysis.swift in Sources */,
+				F53A0D3E2C85F39C008859C4 /* asyncAwait1.swift in Sources */,
 				F5EE12302BE73682002260D2 /* HomeScreen.swift in Sources */,
 				F55EE8222BE7BD6D002825DC /* SelectHeight.swift in Sources */,
 			);
